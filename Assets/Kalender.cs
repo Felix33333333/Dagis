@@ -1,16 +1,14 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Närvaro : MonoBehaviour
+public class Kalender : MonoBehaviour
 {
     public Button yourButton;
     public GameObject thingToShow;
-    public TMP_Text nameList;
-    
+
     
     void Start()
     {
@@ -20,25 +18,24 @@ public class Närvaro : MonoBehaviour
 
     public void TaskOnClick()
     {
-        print("Yannic");
         if (thingToShow.activeSelf == false)
         {
             thingToShow.SetActive(true);
+
         }
         else
         {
             thingToShow.SetActive(false);
+
         }
-
-            nameList.text = "Yannic (Frånvarande), Anna, Adam, Roger(Frånvarande), Ludvig, Lukas ";
-       
+        
+        
+        
     }
-    
 
-    // Update is called once per frame
-    void Update ()
+    
+    void Update()
     {
-       // thingToShow.SetActive(false);
-       
+        
     }
 }
