@@ -5,15 +5,15 @@ using TMPro;
 
 public class Kommunikation : MonoBehaviour
 {
-    public TMP_Text contactText;
+    public TMP_Text contactText;//texten som visas ut 
 
     // Klass för kontakt
     public class Contact
     {
-        public string name;
-        public string parentName;
-        public string phone;
-        public string email;
+        public string name;//elevens namn
+        public string parentName;//föräldrens namn
+        public string phone;//telefonnummer
+        public string email;//email
 
         public Contact(string n, string p, string ph, string e)
         {
@@ -24,7 +24,7 @@ public class Kommunikation : MonoBehaviour
         }
     }
 
-    List<Contact> contacts = new List<Contact>();
+    List<Contact> contacts = new List<Contact>();//lista med kontakter
    
     void Start()
     {
