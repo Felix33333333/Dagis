@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Närvaro : MonoBehaviour
+public class Närvaro : MonoBehaviour 
 {
     public Button yourButton;
     public GameObject thingToShow;
@@ -14,14 +14,14 @@ public class Närvaro : MonoBehaviour
     
     void Start()
     {
-        Button btn = yourButton.GetComponent<Button>();
-        btn.onClick.AddListener(TaskOnClick);
+        Button btn = yourButton.GetComponent<Button>(); // hämtar en button komponent från (yourobject) 
+        btn.onClick.AddListener(TaskOnClick); // säger när knapen klickas så körs funkitionenn "taskonclick"
     }
 
-    public void TaskOnClick()
+    public void TaskOnClick() //själva fu nktionen
     {
         print("Yannic");
-        if (thingToShow.activeSelf == false)
+        if (thingToShow.activeSelf == false) // detta gör om objectet inte är aktivt så visa de och om objecter är activt så göm de
         {
             thingToShow.SetActive(true);
         }
@@ -30,8 +30,8 @@ public class Närvaro : MonoBehaviour
             thingToShow.SetActive(false);
         }
 
-            nameList.text = "Yannic (Frånvarande), Anna, Adam, Roger(Frånvarande), Ludvig, Lukas ";
-       
+            nameList.text = "Yannic (Frånvarande), Anna, Adam, Roger(Frånvarande), Ludvig, Lukas "; // visar lista me namn
+        
     }
     
 
